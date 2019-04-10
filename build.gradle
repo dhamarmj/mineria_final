@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'edu.pucmm.dhamarmj'
+version '1.0-SNAPSHOT'
+mainClassName = "edu.pucmm.dhamarmj.Main"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'nz.ac.waikato.cms.weka:weka-stable:3.8.0'
+    implementation 'nz.ac.waikato.cms.weka:weka-stable:3.8.3'
+    implementation 'nz.ac.waikato.cms.weka:weka-dev:3.9.3'
+    compile 'com.sparkjava:spark-core:2.7.2'
+    compile 'com.sparkjava:spark-template-freemarker:2.7.1'
+    compile 'org.freemarker:freemarker:2.3.26-incubating'
+    compile 'com.sparkjava:spark-debug-tools:0.5'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile "org.slf4j:slf4j-simple:1.7.21"
+
+}
